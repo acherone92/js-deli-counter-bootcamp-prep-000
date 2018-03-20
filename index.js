@@ -7,3 +7,10 @@ function takeANumber(katzDeliLine, newCust){
   return `Welcome, ${newCust}. You are number ${position} in line.`;
 }
 
+function currentLine(deliLine){
+  var lineArr = [];
+  for (let i=0; i<deliLine; i++){
+    lineArr[i] = `${i}. ` + deliLine[i];
+  }
+  return `The line is currently: ${lineArr}`;
+}
