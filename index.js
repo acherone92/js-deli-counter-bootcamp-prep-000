@@ -11,10 +11,8 @@ function nowServing(deliLine){
     return "There is nobody waiting to be served!";
   }
   else {
-    return `Currently serving ` +deliLine[0]+ '.';
+    return `Currently serving ` +deliLine.shift()+ '.';
   }
-  console.log('you got to the end of hte nowserving function');
-  return deliLine.shift();
 }
 
 function currentLine(deliLine){
