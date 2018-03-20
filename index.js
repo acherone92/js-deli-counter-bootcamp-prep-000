@@ -6,7 +6,7 @@ function takeANumber(katzDeliLine, newCust){
   return `Welcome, ${newCust}. You are number ${position} in line.`;
 }
 
-function nowServing(){
+function nowServing(deliLine){
   
 }
 
