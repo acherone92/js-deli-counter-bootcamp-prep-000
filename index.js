@@ -18,7 +18,7 @@ function currentLine(deliLine){
     var lineString = [];
     for (let i=0; i<deliLine.length; i++){
       var position = i + 1;
-      lineString = `${position}. ` + deliLine[i];
+      lineString = lineString + `${position}. ` + deliLine[i];
     }
     return `The line is currently: ${lineString}`;
   }
