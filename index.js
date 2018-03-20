@@ -16,6 +16,7 @@ function currentLine(deliLine){
     for (let i=0; i<deliLine; i++){
     lineArr[i] = `${i}. ` + deliLine[i];
     }
-  }
     return `The line is currently: ${lineArr}`;
+  }
+    
 }
