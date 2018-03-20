@@ -20,6 +20,10 @@ function currentLine(deliLine){
       var position = i + 1;
       if (position<deliLine.length){
         lineString = lineString + `${position}. ` + deliLine[i] + ", ";
+      }
+      else {
+          lineString = lineString + `${position}. ` + deliLine[i];
+        }
     }
         return `The line is currently: ${lineString}`;
   }
