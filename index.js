@@ -15,7 +15,7 @@ function currentLine(deliLine){
     return "The line is currently empty.";
   }
   else {
-    for (let i=0; i<deliLine; i++){
+    for (let i=0; i<deliLine.length; i++){
     var lineArr[i] = `${i}. ` + deliLine[i];
     }
     return `The line is currently: ${lineArr}`;
