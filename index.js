@@ -19,7 +19,7 @@ function currentLine(deliLine){
     for (let i=0; i<deliLine.length; i++){
     lineString = `${i}. ` + deliLine[i];
     }
-    return `The line is currently: ${lineArr}`;
+    return `The line is currently: ${lineString}`;
   }
     
 }
