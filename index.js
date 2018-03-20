@@ -11,14 +11,14 @@ function nowServing(){
 }
 
 function currentLine(deliLine){
-    if (deliLine.length===0){
+  if (deliLine.length===0){
     return "The line is currently empty.";
-    }
+  }
   else {
     var lineString = [];
     for (let i=0; i<deliLine.length; i++){
-    var position = i + 1;
-    lineString = `${position}. ` + deliLine[i];
+      var position = i + 1;
+      lineString = `${position}. ` + deliLine[i];
     }
     return `The line is currently: ${lineString}`;
   }
