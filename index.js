@@ -4,6 +4,7 @@ function takeANumber(katzDeliLine, newCust){
   katzDeliLine.push(newCust);
   console.log(katzDeliLine);
   var position = parseInt(katzDeliLine.indexOf(newCust)) + 1;
+  console.log(`Welcome, ${newCust}. You are number ${position} in line.`)
   return `Welcome, ${newCust}. You are number ${position} in line.`;
 }
 
