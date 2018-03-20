@@ -4,14 +4,18 @@ function takeANumber(katzDeliLine, newCust){
   katzDeliLine.push(newCust);
   console.log(katzDeliLine);
   var position = parseInt(katzDeliLine.indexOf(newCust)) + 1;
-  console.log(`Welcome, ${newCust}. You are number ${position} in line.`)
   return `Welcome, ${newCust}. You are number ${position} in line.`;
 }
 
 function currentLine(deliLine){
   var lineArr = [];
-  for (let i=0; i<deliLine; i++){
-    lineArr[i] = `${i}. ` + deliLine[i];
+  if (deliLine === []){
+    return "The line is currentlty empty.";
   }
-  return `The line is currently: ${lineArr}`;
+  else {
+    for (let i=0; i<deliLine; i++){
+    lineArr[i] = `${i}. ` + deliLine[i];
+    }
+  }
+    return `The line is currently: ${lineArr}`;
 }
