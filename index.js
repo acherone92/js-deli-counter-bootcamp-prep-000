@@ -13,7 +13,7 @@ function nowServing(deliLine){
   else {
     return `Currently serving ` +deliLine[0]+ '.';
   }
-  deliLine.shift();
+  return deliLine.shift();
 }
 
 function currentLine(deliLine){
